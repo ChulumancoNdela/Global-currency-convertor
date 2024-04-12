@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="conveter.js"></script> 
+</head>
+<body>
+    
+    <div class="converter">
+        <h1>Money Converter</h1>
+        <div class="input-group">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <select id="fromCurrency">
+                <option value="USD">$ (USD)</option>
+                <option value="EUR">€ (EUR)</option>
+                <option value="GBP">£ (GBP)</option>
+                <option value="ZAR">R (ZAR)</option>
+                <!-- Add more currency options here -->
+            </select>
+            
+            <select id="toCurrency">
+                <option value="USD">$ (USD)</option>
+                <option value="EUR">€ (EUR)</option>
+                <option value="GBP">£ (GBP)</option>
+                <option value="ZAR">R (ZAR)</option>
+                <!-- Add more currency options here -->
+            </select>
+            
+            <button onclick="convert()">Convert</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <div class="payment-form">
+        <h2>Card Payment</h2>
+        <div class="form-group">
+          <label for="cardNumber">Card Number</label>
+          <input type="text" id="cardNumber" placeholder="Card Number">
+        </div>
+        <div class="form-group">
+          <label for="expiryDate">Expiry Date (MM/YY)</label>
+          <input type="text" id="expiryDate" placeholder="Expiry Date">
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" placeholder="CVV">
+        </div>
+        <button onclick="processPayment()">Pay Now</button>
+      </div>
+      
+
+</body>
+</html>
